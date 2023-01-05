@@ -1,12 +1,10 @@
 from abc import abstractmethod
 # Interface Segregation Principle
 
+######## wrong ##########
 class Machine:
     def print(self, document):
-        raise NotImplementedError()
-
-    def fax(self, document):
-        raise NotImplementedError()
+        pass
 
     def scan(self, document):
         raise NotImplementedError()
@@ -17,26 +15,20 @@ class MultiFunctionPrinter(Machine):
     def print(self, document):
         pass
 
-    def fax(self, document):
-        pass
-
     def scan(self, document):
         pass
 
-
+# but, what if is a old printer?
 class OldFashionedPrinter(Machine):
     def print(self, document):
         # ok - print stuff
         pass
 
-    def fax(self, document):
-        pass  # do-nothing
-
     def scan(self, document):
         """Not supported!"""
         raise NotImplementedError('Printer cannot scan!')
 
-
+######### Good #####
 class Printer:
     @abstractmethod
     def print(self, document): pass

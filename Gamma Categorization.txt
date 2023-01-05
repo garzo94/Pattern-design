@@ -1,0 +1,10 @@
+Creational patterns
+    - Deal with the creation of objects
+    - Explicit vs implicit
+    - Wholesale vs pircewise (step by step)
+Structural patterns
+    - Concerned with the structure
+    - Many patterns are wrappers that mimic the underlying class interface
+    - Sress the importance of good API design
+Behavior patterns
+    - They are all different; no central theme
