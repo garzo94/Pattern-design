@@ -1,3 +1,5 @@
+# Interface for accesing a particular resource
+    # This assumes that foo is in the same process as Bar
 class Car:
     def __init__(self, driver):
         self.driver = driver

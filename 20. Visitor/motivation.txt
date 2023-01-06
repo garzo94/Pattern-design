@@ -1,0 +1,4 @@
+Need to define a new ooperation on an etire class hierarchy
+    makrdown
+Dont watn to keepo modifyin every class in the hierarchy
+Create an externa component to handle rendering
